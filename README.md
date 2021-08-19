@@ -1,4 +1,4 @@
-### Hi there 👋
+### Hey I'm VulcanWM 🙏
 
 - I’m currently working on a Flask version of my text-based game series: The Hollow
 - I’m currently learning css and javascript 
