@@ -6,5 +6,3 @@
 - How to reach me: ping me on replit @VulcanWM
 - Pronouns: she/her
 - Fun fact: I'm a big fan of the Percy Jackson series (I laughed when Jason died)
-
-~~Follow me and I'll follow you back~~
