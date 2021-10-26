@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>VulcanWM</title>
+    <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Hi I'm VulcanWM!</h1>
+    </div>
+    <div class="navbar">
+      <a class="nav-link nav-link-ltr" href="/#about">About</a>
+      <a class="nav-link nav-link-ltr" href="/#contact">Contact</a>
+      <a class="nav-link nav-link-ltr" href="/#projects">My Projects</a>
+      <a class="nav-link nav-link-ltr" href="/#credits">Website Credits</a>
+    </div>
+    <div class="content">
+      <div class="about" id="about">
+        <h1>About me</h1>
+        <p>I'm a web and game developer who codes for fun. My main language is Python (I really like Flask), and I use HTML, JS and CSS for frontend for my projects.</p>
+      </div>
+
+      <hr>
+
+      <div class="contact" id="contact">
+        <h1>Contact me</h1>
+        <a href="https://replit.com/@VulcanWM" class="hoverlink">On replit</a>
+        <br>
+        <a href="https://github.com/VulcanWM" class="hoverlink">On github</a>
+        
+      </div>
+
+      <hr>
+
+      <div class="projects" id="projects">
+        <h1>My projects</h1>
+        <ul>
+          <li><a class="hoverlink" href="https://ovaleyes.tk/">OvalEyes</a>: a social media website</li>
+          <li><a class="hoverlink" href="https://drinks-cabin.vulcanwm.repl.co/">Drinks Cabin</a>: a game in which you have your own drinks company</li>
+          <li><a class="hoverlink" href="https://frank.vulcanwm.repl.co/">FRANK</a>: multi-purpose website</li>
+          <li><a class="hoverlink" href="https://greek-mythology-wikipedia.vulcanwm.repl.co/">We Greek</a>: a greek mythology wikipedia</li>
+          <li><a class="hoverlink" href="https://imposter.vulcanwm.repl.co/">Imposter</a>: guess who the imposter in your online lesson is</li>
+        </ul>
+      </div>
+
+      <hr>
+
+      <div class="credits" id="credits">
+        <h1>Website Credits</h1>
+        <ul>
+          <li><a class="hoverlink" href="https://codepen.io/sreisner">sreisner on Codepen</a> for the navigation bar</li>
+        </ul>
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename='sticky.js') }}"></script>
+  </body>
+</html>

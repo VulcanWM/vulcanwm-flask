@@ -1,0 +1,81 @@
+body {
+  padding: 0;
+  font-family: 'Source Code Pro', monospace;
+  background-color: #121212;
+  scroll-behavior: smooth;
+  color: white;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  text-align: center;
+  overflow: hidden;
+  border-bottom: 1px solid #2b2a2a;
+  background-color: #121212;
+  position: sticky;
+  top: 0;
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(204, 206, 209);
+  padding: 20px 0px;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: rgb(204, 206, 209);
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 100%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.header {
+  text-align: center;
+}
+
+.hoverlink {
+  text-decoration: none;
+  color: rgb(206, 203, 203)
+}
+
+.hoverlink:hover {
+  color: rgb(136, 133, 133)
+}
