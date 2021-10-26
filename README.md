@@ -7,4 +7,4 @@
 - Pronouns: she/her
 - Fun fact: I'm a big fan of the Percy Jackson series (I laughed when Jason died)
 
-![VulcanWM's GitHub stats](https://github-readme-stats.vercel.app/api?username=VulcanWM)
+![VulcanWM's GitHub stats](https://github-readme-stats.vercel.app/api?username=VulcanWM&theme=dark)
