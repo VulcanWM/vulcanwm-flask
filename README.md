@@ -8,4 +8,5 @@
 - Fun fact: I'm a big fan of the Percy Jackson series (I laughed when Jason died)
 
 ![VulcanWM's GitHub stats](https://github-readme-stats.vercel.app/api?username=VulcanWM&theme=dark)
+\
 ![VulcanWM's Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=VulcanWM&theme=dark)
