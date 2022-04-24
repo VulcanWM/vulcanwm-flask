@@ -1,17 +1,15 @@
 <h1 align="center">Hey 🙏, I'm VulcanWM</h1>
-<h3 align="center">A Web and Game Developer who codes for fun from the UK</h3>
+<h3 align="center">A 13 year old Web and Game Developer from the UK</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=vulcanwm&label=Profile%20views&color=0e75b6&style=flat" alt="vulcanwm" /> </p>
 
-- 🔭 I’m currently working on [munity](https://github.com/VulcanWM/munity)
+- 🔭 I’m currently working on learning Swift, so I can build iOS apps
 
 - 👨‍💻 All of my projects are available at [https://vulcanwm.is-a.dev](https://vulcanwm.is-a.dev)
 
 - 💬 Ask me about **flask, pymongo**
 
 - 📫 How to reach me **vulcanwmemail@gmail.com**
-
-- ⚡ Fun fact **I'm a big fan of the Percy Jackson series (I laughed when Jason died)**
 
 
 <h3 align="left">Languages and Tools:</h3>
