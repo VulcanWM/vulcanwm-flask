@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
 body {
   padding: 0;
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Cairo', sans-serif;
   background-color: #121212;
   scroll-behavior: smooth;
   color: white;
@@ -78,4 +80,36 @@ html{
 
 .hoverlink:hover {
   color: rgb(136, 133, 133)
+}
+
+input{
+  padding: 10px;
+  border-radius: 30px;
+  border: 2px solid #3ed0ed;
+  background-color: transparent;
+  outline: none;
+  font-size: 15px;
+  transition: 0.2s;
+  width: 200px;
+  margin-bottom: 30px; 
+  color: white;
+  text-align: center;
+}
+
+input:focus{
+  border-color:#AD91FF;
+  width: 250px;
+}
+
+
+.button{
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  border: 2px solid #68d696;
+  transition: 0.2s;
 }

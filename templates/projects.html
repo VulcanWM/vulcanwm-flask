@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -18,20 +17,13 @@
       <a class="nav-link nav-link-ltr" href="/newsletter">Newsletter</a>
     </div>
     <div class="content">
-      <div class="about" id="about">
-        <h1>About me</h1>
-        <p>I'm a 13 year old web and game developer from the UK. My main language is Python (I really like Flask), and I use HTML, JS and CSS for frontend for my projects. I'm currently learning Swift to make iOS apps.</p>
-      </div>
-      <hr>
-      <div class="contact" id="contact">
-        <h1>Contact me</h1>
-        <a href="https://replit.com/@VulcanWM" class="hoverlink">On replit</a>
-        <br>
-        <a href="https://github.com/VulcanWM" class="hoverlink">On github</a>
-        <br>
-        <a href="https://dev.to/vulcanwm" class="hoverlink">On dev.to</a>
-        <br>
-        <a href="mailto:vulcanwmemail@gmail.com" class="hoverlink">On email</a>
+      <div class="projects" id="projects">
+        <h1>My projects</h1>
+        <ul>
+          {% for number in numbers %}
+            <li><a class="hoverlink" href="{{urls[number]}}">{{names[number]}}</a>: {{descriptions[number]}}</li>
+          {% endfor %}
+        </ul>
       </div>
     </div>
     <script src="{{ url_for('static', filename='sticky.js') }}"></script>
