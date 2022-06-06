@@ -1,0 +1,9 @@
+pymongo
+dnspython
+flask
+jinja2
+werkzeug
+itsdangerous
+click
+importlib-metadata
+gunicorn
