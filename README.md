@@ -21,4 +21,4 @@
 
 # Stats
 
-https://projecteuler.net/profile/VulcanWM.png
+![image](https://projecteuler.net/profile/VulcanWM.png)
