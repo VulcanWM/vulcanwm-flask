@@ -20,19 +20,20 @@
     <div class="content">
       <h1>My projects</h1>
       <div class="projects">
-<!--       <ul> -->
           {% for project in projects %}
-<!--         <li><a class="hoverlink" href="{{projects[project]['Link']}}">{{project}}</a>: {{projects[project]['Desc']}}</li> -->
-            <a href="{{projects[project]['Link']}}">
+            <a href="{{projects[project]['Link']}}" class="{{projects[project]['Status']}}" target="_blank">
               <div class="project">
                 <h3>{{project}}</h3>
                 <hr>
-                <p>{{projects[project]['Desc']}}</p>
+                {% if projects[project]['Status'] == "progress" %}
+                  <p class="red">In progress</p>
+                {% else %}
+                  <p>{{projects[project]['Desc']}}</p>
+                {% endif %}
               </div>
             </a>
         {% endfor %}
       </div>
-<!--       </ul> -->
     </div>
     <script src="{{ url_for('static', filename='sticky.js') }}"></script>
   </body>

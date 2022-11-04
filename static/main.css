@@ -1,10 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 
+:root {
+  --primary: #0ced6a;
+  --light-accent: #68d696;
+  --dark-accent: #08a449;
+  --secondary: #0CEDDB;
+  --red: #ff0000;
+  --background: #121212;
+  --light-background: #2b2a2a;
+  --font-color: white;
+}
+
 body {
   padding: 0;
-  background-color: #121212;
+  background-color: var(--background);
   scroll-behavior: smooth;
-  color: white;
+  color: var(--font-color);
   text-align: center;
 }
 
@@ -15,8 +26,8 @@ html{
 .navbar {
   text-align: center;
   overflow: hidden;
-  border-bottom: 1px solid #2b2a2a;
-  background-color: #121212;
+  border-bottom: 1px solid var(--light-background);
+  background-color: var(--background);
   position: sticky;
   top: 0;
   font-family: 'Cairo', sans-serif;
@@ -27,7 +38,7 @@ html{
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #0ced6a;
+  color: var(--primary);
   padding: 8px 0px;
   margin: 0px 20px;
   display: inline-block;
@@ -43,7 +54,7 @@ html{
   height: 1.5px;
   content: "";
   position: absolute;
-  background-color: #0ced6a
+  background-color: var(--primary)
 }
 
 .nav-link-ltr::before {
@@ -77,17 +88,17 @@ html{
 
 .hoverlink {
   text-decoration: none;
-  color: rgb(206, 203, 203)
+  color: var(--light-accent);
 }
 
 .hoverlink:hover {
-  color: rgb(136, 133, 133)
+  color: var(--dark-accent);
 }
 
 input{
   padding: 10px;
   border-radius: 30px;
-  border: 2px solid #0ced6a;
+  border: 2px solid  var(--primary);
   background-color: transparent;
   outline: none;
   font-size: 15px;
@@ -99,7 +110,7 @@ input{
 }
 
 input:focus{
-  border-color: #08a449;
+  border-color: var(--dark-accent);
   width: 250px;
 }
 
@@ -110,14 +121,14 @@ input:focus{
   padding-right: 30px;
   border-radius: 20px;
   background-color: transparent;
-  color: white;
+  color: var(--font-color);
   cursor: pointer;
-  border: 2px solid #0ced6a;
+  border: 2px solid var(--primary);
   transition: 0.2s;
 }
 
 .button:hover{
-  border-color: #08a449
+  border-color: var(--dark-accent);
 }
 
 .apps {
@@ -146,13 +157,13 @@ input:focus{
 }
 
 a {
-  color: white;
+  color: var(--font-color);
   text-decoration: none;
 }
 
 strong { 
   font-weight: bold; 
-  color: #68d696;
+  color: var(--light-accent);
 }
 
 .projects {
@@ -164,7 +175,7 @@ strong {
 }
 
 .project {
-  border: 4px solid #0ced6a;
+  border: 4px solid var(--primary);
   font-size: 20px;
   width: 200px;
   height: 200px;
@@ -177,10 +188,24 @@ strong {
 }
 
 .project:hover {
-  
+  transition: 300ms;
+  border: 4px solid var(--secondary);
 }
 
 .project hr {
-  border: 2px solid green;
+  border: 2px solid var(--primary);
   padding: 0px
+}
+
+.project hr:hover {
+  border: 2px solid var(--secondary);
+}
+
+.progress {
+  pointer-events: none
+}
+
+.red {
+  font-weight: bold; 
+  color: var(--red);
 }

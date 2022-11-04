@@ -14,7 +14,6 @@ def contact():
 
 @app.route("/projects")
 def projects_page():
-  # return render_template("projects.html", names=names, urls=urls, descriptions=descriptions, numbers=numbers)
   return render_template("projects.html", projects=projects)
 
 @app.route("/newsletter")

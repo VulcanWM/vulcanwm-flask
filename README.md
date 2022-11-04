@@ -1,7 +1,7 @@
 # 💫About Me :
 <h1 align="center">Hey 🙏, I'm VulcanWM</h1>
 <h3 align="center">A 13 year old Web and Game Developer from the UK</h3>
-- 🔭 I’m currently working on learning JavaScript
+- 🔭 I’m currently working on revamping my portfolio
 
 - 👨‍💻 All of my projects are available at [https://vulcanwm.is-a.dev](https://vulcanwm.is-a.dev)
 
