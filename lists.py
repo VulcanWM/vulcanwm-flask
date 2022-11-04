@@ -56,3 +56,11 @@ projects = {
     "Desc": "guess who is the imposter in your online lesson"
   }
 }
+
+project_names = list(projects.keys())
+more_keywords = ['python', 'flask', 'html', 'css', 'js', 'mongodb', 'swift']
+list_keywords = project_names + more_keywords
+
+keywords = ", ".join(list_keywords)
+
+description = "VulcanWM is a 13 year old full-stack developer from the UK who uses Python, Flask, HTML, CSS, JS, MongoDB and Swift to build fun and useful projects."

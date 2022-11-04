@@ -19,10 +19,6 @@ body {
   text-align: center;
 }
 
-html{
-  scroll-behavior: smooth;
-}
-
 .navbar {
   text-align: center;
   overflow: hidden;
@@ -115,19 +111,20 @@ input:focus{
 }
 
 
-.button{
-  padding: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
-  border-radius: 20px;
+.subscribe{
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 15px;
   background-color: transparent;
   color: var(--font-color);
   cursor: pointer;
   border: 2px solid var(--primary);
   transition: 0.2s;
+  font-size: 17px;
 }
 
-.button:hover{
+.subscribe:hover{
   border-color: var(--dark-accent);
 }
 

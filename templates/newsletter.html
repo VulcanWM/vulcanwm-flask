@@ -6,6 +6,15 @@
     <title>VulcanWM's Newsletters</title>
     <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" /> <link rel="shortcut icon" href="/favicon.ico" />
+    <meta name="description" content="{{description}}"/>
+    <meta name="keywords" content="{{keywords}}">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="Portfolio" />
+    <meta property="og:title" content="VulcanWM's Portfolio" />
+    <meta property="og:description" content="{{description}}" />
+    <meta property="og:image" content="{{ url_for('static', filename='logo.png') }}" />
+    <meta property="og:url" content="https://vulcanwm.is-a.dev" />
+    <meta property="og:site_name" content="VulcanWM's Portfolio" />
   </head>
   <body>
     <div class="header">
@@ -18,14 +27,14 @@
       <a class="nav-link nav-link-ltr" href="/newsletter">Newsletter</a>
     </div>
     <div class="content">
-      {% if error != "" and error != False and error != None %}
-        <p>{{error}}</p>
+      {% if msg != "" and msg != False and msg != None %}
+        <p class="red">{{msg}}</p>
       {% endif %}
       <p>Want to subscribe to VulcanWM's Newsletters? Fill in the form below:</p>
       <form method="POST" action="/newsletter">
         <input placeholder="email" type="email" name="email" required>
         <br>
-        <button class="button">subscribe</button>
+        <button class="subscribe">subscribe</button>
       </form>
     </div>
     <script src="{{ url_for('static', filename='sticky.js') }}"></script>

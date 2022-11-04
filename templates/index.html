@@ -6,6 +6,15 @@
     <title>VulcanWM</title>
     <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" />
+    <meta name="description" content="{{description}}"/>
+    <meta name="keywords" content="{{keywords}}">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="Portfolio" />
+    <meta property="og:title" content="VulcanWM's Portfolio" />
+    <meta property="og:description" content="{{description}}" />
+    <meta property="og:image" content="{{ url_for('static', filename='logo.png') }}" />
+    <meta property="og:url" content="https://vulcanwm.is-a.dev" />
+    <meta property="og:site_name" content="VulcanWM's Portfolio" />
   </head>
   <body>
     <div class="header">

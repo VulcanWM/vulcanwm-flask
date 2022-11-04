@@ -109,6 +109,10 @@ def verifyemail(theid):
   return "Email verified! You will start receiving VulcanWM's Newsletters!"
 
 def unsubscribe(theid):
+  try:
+    ObjectId(theid)
+  except:
+    return "This is not a valid url!"
   search = searchidsub(theid)
   if search == False:
     return "This is not a valid url!"
