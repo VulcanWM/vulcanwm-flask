@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -18,13 +19,22 @@
       <a class="nav-link nav-link-ltr" href="/newsletter">Newsletter</a>
     </div>
     <div class="content">
-      <div class="about" id="about">
-        <h1>About me</h1>
-        <p>I'm a 13 year old full-stack developer from the UK.</p>
-        <h1>Tech Stack</h1>
-        <p>My main language is <strong>Python</strong> - I really like <strong>Flask</strong> - and I use <strong>HTML, JS and CSS</strong> for frontend for my projects.</p>
-        <p>I use databases a lot in my projects, and it's usually <strong>MongoDB</strong>.</p>
-        <p>I also have some knowledge of <strong>Swift</strong>, and can make simple iOS apps.</p>
+      <div id="contact">
+        <h1>Contact me</h1>
+        <div class="apps">
+          {% for contact in contacts.keys() %}
+            <a href="{{contacts[contact]['Link']}}" target="_blank">
+              <div class="app">
+                <div class="contact github" style="background-image: url('https://newportfolio.vulcanwm.repl.co/{{contacts[contact]['Image']}}');
+          background-size: 5em 5em;">
+                </div>
+                <div class="text">
+                   <p>{{contact}}</p>
+                </div>
+              </div>
+            </a>
+          {% endfor %}
+        </div>
       </div>
     </div>
     <script src="{{ url_for('static', filename='sticky.js') }}"></script>

@@ -2,10 +2,10 @@
 
 body {
   padding: 0;
-  font-family: 'Cairo', sans-serif;
   background-color: #121212;
   scroll-behavior: smooth;
   color: white;
+  text-align: center;
 }
 
 html{
@@ -19,6 +19,7 @@ html{
   background-color: #121212;
   position: sticky;
   top: 0;
+  font-family: 'Cairo', sans-serif;
 }
 
 .nav-link {
@@ -26,24 +27,23 @@ html{
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
-  color: rgb(204, 206, 209);
-  padding: 20px 0px;
+  color: #0ced6a;
+  padding: 8px 0px;
   margin: 0px 20px;
   display: inline-block;
   position: relative;
-  opacity: 0.75;
 }
 
 .nav-link:hover {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .nav-link::before {
   transition: 300ms;
-  height: 5px;
+  height: 1.5px;
   content: "";
   position: absolute;
-  background-color: rgb(204, 206, 209);
+  background-color: #0ced6a
 }
 
 .nav-link-ltr::before {
@@ -67,10 +67,12 @@ html{
 
 .content {
   padding: 16px;
+  font-family: Tahoma, sans-serif;
 }
 
 .header {
   text-align: center;
+  font-family: 'Cairo', sans-serif;
 }
 
 .hoverlink {
@@ -85,7 +87,7 @@ html{
 input{
   padding: 10px;
   border-radius: 30px;
-  border: 2px solid #3ed0ed;
+  border: 2px solid #0ced6a;
   background-color: transparent;
   outline: none;
   font-size: 15px;
@@ -97,7 +99,7 @@ input{
 }
 
 input:focus{
-  border-color:#AD91FF;
+  border-color: #08a449;
   width: 250px;
 }
 
@@ -110,6 +112,75 @@ input:focus{
   background-color: transparent;
   color: white;
   cursor: pointer;
-  border: 2px solid #68d696;
+  border: 2px solid #0ced6a;
   transition: 0.2s;
+}
+
+.button:hover{
+  border-color: #08a449
+}
+
+.apps {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact {
+  margin: 0.2em;
+  height: 5em;
+  width: 5em;
+  border-radius: 0.5em;
+}
+
+.app .text {
+  margin: 0.2em;
+  font-size: 1em;
+  text-align: center;
+}
+
+.app:hover {
+  cursor: pointer;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+strong { 
+  font-weight: bold; 
+  color: #68d696;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.project {
+  border: 4px solid #0ced6a;
+  font-size: 20px;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px
+}
+
+.project p{
+  padding: 6px;
+}
+
+.project:hover {
+  
+}
+
+.project hr {
+  border: 2px solid green;
+  padding: 0px
 }
