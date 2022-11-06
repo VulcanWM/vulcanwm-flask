@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html>
+<html lang="en-GB">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>VulcanWM</title>
+    <title>VulcanWM - Contact</title>
     <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" />
     <meta name="description" content="{{description}}"/>
     <meta name="keywords" content="{{keywords}}">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="Portfolio" />
-    <meta property="og:title" content="VulcanWM's Portfolio" />
+    <meta property="og:title" content="VulcanWM's Portfolio - A 13 year old Full-Stack Developer" />
     <meta property="og:description" content="{{description}}" />
     <meta property="og:image" content="{{ url_for('static', filename='logo.png') }}" />
     <meta property="og:url" content="https://vulcanwm.is-a.dev" />
@@ -29,7 +28,7 @@
     </div>
     <div class="content">
       <div id="contact">
-        <h1>Contact me</h1>
+        <h2>Contact me</h2>
         <div class="apps">
           {% for contact in contacts.keys() %}
             <a href="{{contacts[contact]['Link']}}" target="_blank">

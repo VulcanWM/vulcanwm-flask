@@ -1,8 +1,12 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, send_file
 from functions import addemail, verifyemail, unsubscribe
 from lists import contacts, projects, keywords, description
 
 app = Flask(__name__, static_url_path='', static_folder='static', template_folder='templates')
+
+@app.route("/robots.txt")
+def robotstxt():
+  return send_file("static/robots.txt")
 
 @app.route('/')
 def index():

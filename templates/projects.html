@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>VulcanWM</title>
+    <title>VulcanWM - Projects</title>
     <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" />
     <meta name="description" content="{{description}}"/>
     <meta name="keywords" content="{{keywords}}">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="Portfolio" />
-    <meta property="og:title" content="VulcanWM's Portfolio" />
+    <meta property="og:title" content="VulcanWM's Portfolio - A 13 year old Full-Stack Developer" />
     <meta property="og:description" content="{{description}}" />
     <meta property="og:image" content="{{ url_for('static', filename='logo.png') }}" />
     <meta property="og:url" content="https://vulcanwm.is-a.dev" />
@@ -27,18 +27,23 @@
       <a class="nav-link nav-link-ltr" href="/newsletter">Newsletter</a>
     </div>
     <div class="content">
-      <h1>My projects</h1>
+      <h2>My projects</h2>
       <div class="projects">
           {% for project in projects %}
             <a href="{{projects[project]['Link']}}" class="{{projects[project]['Status']}}" target="_blank">
               <div class="project">
                 <h3>{{project}}</h3>
-                <hr>
                 {% if projects[project]['Status'] == "progress" %}
                   <p class="red">In progress</p>
                 {% else %}
                   <p>{{projects[project]['Desc']}}</p>
                 {% endif %}
+                <div class="tags">
+                  {% for tag in projects[project]['Tags'] %}
+                    <p class="tag {{tag}}">{{tag}}</p>
+                  {% endfor %}
+                </div>
+                <br>
               </div>
             </a>
         {% endfor %}
